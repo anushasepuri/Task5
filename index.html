@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+	<link rel="stylesheet" type="text/css" href="js task11.css">
+	<meta name="Viewport" content="width=device-width,initial scale=1.0">
+</head>
+<body style="font-size: 20px;">
+	<div class="a">
+		<div class="b">
+			<p style="text-align: center;font-size: 25px;font-weight: bold;"><i><u>forEach() Method</u></i></p>
+				<p><b><u>Description:</u></b></p>
+				<p>The <b>forEach()</b> method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.</p>
+				<p><b><u>Syntax:</u></b><br>array.forEach(function_name)</p>
+				<p><b><u>Example:</u></b></p>
+				<p>My array is</p>
+				<p id="id1"></p>
+				<p>For the given array,using <b>forEach()</b> and adding 'Hi' before each element using function,the elements are printed as<br></p>
+				<p id="id2"></p>
+				<script type="text/javascript">
+					var a=["anu","appu","vyshu"];
+					document.getElementById('id1').innerHTML=a;
+					b="";
+					c="Hii ";
+					a.forEach(hello);
+					document.getElementById('id2').innerHTML=b;
+					function hello(value){
+						b+=c+value+"<br>";
+					}
+				</script>
+		</div>
+		<div class="b">
+			<p style="text-align: center;font-size: 25px;font-weight: bold;"><i><u>filter() Method</u></i>
+			<p><b><u>Description:</u></b></p>
+			<p>The <b>filter()</b> method is used to create a new array from a given array consisting of only those elements from the given array which satisfy a condition set by the argument method.</p>
+			<p><b><u>Syntax:</u></b><br>array.filter(function_name)</p>
+			<p><b><u>Example:</u></b></p>
+			<p>My array is</p>
+			<p id="id3"></p>
+			<p>For the given array,using <b>filter()</b>,we can filter the elements by giving a condition.</p>
+			<p>If I want to print the elements which are exactly divisible by 5 among the given elements,my output will be</p>
+			<p id="id4"></p>
+			<script type="text/javascript">
+				var c=[2,5,10,14,20,36,54,60,77];
+				document.getElementById('id3').innerHTML=c;
+				d=c.filter(div);
+				document.getElementById('id4').innerHTML=d;
+				function div(value){
+					if(value%5==0){
+						return value;
+					}
+				}
+			</script>
+		</div>
+		<div class="b">
+			<p style="text-align: center;font-weight: bold;font-size: 25px;"><i><u>Map()</u></i></p>
+			<p><b><u>Description:</u></b></p>
+			<p>The <b>map()</b> method creates a new array with the results of calling a function for every array element.The map() method calls the provided function once for each element in an array, in order.</p>
+			<p><b><u>Syntax:</u></b><br>array.map(function_name)</p>
+			<p><b><u>Example:</u></b></p>
+			<p>My array is</p>
+			<p id="id5"></p>
+			<p>For the given array,using <b>map()</b>,we can map the elements into a new array.</p>
+			<p>If I want to print the squares of elements,my output will be</p>
+			<p id="id6"></p>
+			<script type="text/javascript">
+				var e=[1,2,3,4,5];
+				document.getElementById('id5').innerHTML=e;
+				f=e.map(div1);
+				document.getElementById('id6').innerHTML=f;
+				function div1(value){
+					return value*value;
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>
